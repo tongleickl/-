@@ -1,0 +1,12 @@
+<body background="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561545662521&di=8881a213a5d1f85a1d1d038df01f3f24&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F6%2F58194b7dc5b3a.jpg">
+
+
+<h1>武侠小说推荐</h1>
+<ul>
+{% for book in book_list %}
+    <li><p>{{ book.title }}</p>
+        <p>{{ book.author }}</p>
+        <p>{{ book.style }}<p/></li>
+{% endfor %}
+</ul>
+</body>

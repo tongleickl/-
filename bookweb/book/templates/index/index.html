@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Creative Coming Soon Template">
+    <meta name="author" content="Hitesh Jariwala">
+    <meta name="keywords" content="">
+    <!-- title -->
+    <title>大数据小说推荐</title>
+    <!-- CSS IMPORT -->
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/static/css/buttons.css"/>
+    <!-- support HTML5 elements and media queries for IE9 -->
+    <!--[if lt IE 9]>
+      	<script src="/static/js/html5shiv.js"></script>
+      	<script src="/static/js/respond.min.js"></script>
+    	<![endif]-->
+<!--	<script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>-->
+<!--	<script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  	<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+<!--  	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+	<style>
+	/* Make the image fully responsive */
+	.carousel-inner img {
+	  width: 100%;
+	  height: 100%;
+	}
+	</style>
+</head>
+<body>
+    <!-- preloader -->
+    <div class="preloader-container">
+        <div class="content-container">
+            <!-- preloader -->
+            <span class="spinner-section-far"></span>
+            <!-- end preloader -->
+            <h6 class="preloader-text">
+                LOADING</h6>
+        </div>
+    </div>
+    <!-- end preloader -->
+    <!-- logo -->
+    <img class="img-logo" alt="logo" src="/static/imgs/logo_small.png" />
+    <p class="img-logo top-title">我们可以一起学习</p>
+    <!-- end logo -->
+    <!-- menu -->
+     <div class="open">
+        <div class="cls">
+        </div>
+        <div>
+            <ul class="sub-menu-t">
+                <li class="active"><a class="menu-link" data-section="home" data-nav-title="home"
+                    data-section-pos="0" data-section-posy="0">首 页 <i class="fa fa-fw fa-home"></i>
+                </a></li>
+                <li><a class="menu-link" data-section="about" data-nav-title="about" data-section-pos="0"
+                    data-section-posy="-100">关 于 <i class="fa fa-fw fa-star-o"></i></a></li>
+                <li><a id="works" class="menu-link" data-section="works" data-nav-title="works" data-section-pos="-100"
+                    data-section-posy="-100">推 荐 <i class="fa fa-fw fa-bell-o"></i></a></li>
+                <li><a class="menu-link" data-section="contact" data-nav-title="contact" data-section-pos="-100"
+                    data-section-posy="0">联系我们<i class="fa fa-fw fa-list"></i></a></li>
+            </ul>
+        </div>
+        <div class="cls">
+        </div>
+    </div>
+    <!-- end menu  -->
+    <!-- page container -->
+    <div class="page-container">
+        <!-- section container -->
+        <div class="section-container">
+            <!-- home section -->
+            <section class="home-section">
+        	    	<!-- section background -->
+        	    	<div class="bg-container"></div>
+                	<!-- end section background -->
+                	<!-- content -->
+                	<div class="content col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-rlt no-pad centering-y">
+            	    	<div class="col-md-12 col-sm-12">
+                	    	<!-- headline -->
+                	    	<h1>大数据小说推荐</h1>
+                            <div class="sub-title" id="wordsrotator">
+                		    	<h4>欢迎来到大数据小说推荐网站</h4>
+                	    	</div>
+                	    	<!-- end headline -->
+                	    	<!-- short description -->
+                	    	<p class="desc">
+                		    	# 请从下面的标签中选择你的喜好：<br>
+                                tips：一次最多只能选择3个哦！
+                	    	</p>
+                	    	<!-- end short description -->
+                            <!-- countdown container -->
+                            <div id="countdown" class="countdown-container">
+								<div id="btn_return" style="width: 800px;display: none; float: left">
+									<input  class="btn btn-red"  value="返回">
+								</div>
+								<div class="label" id="small-label" style="display: none;">
+									<input class="btn btn-blue" type="button" value="热血" onclick="add()">
+									<input class="btn btn-blue" type="button" value="爽文" onclick="add()">
+									<input class="btn btn-blue" type="button" value="争霸" onclick="add()">
+									<input class="btn btn-blue" type="button" value="古典仙侠" onclick="add()">
+									<input class="btn btn-blue" type="button" value="升级" onclick="add()">
+									<input class="btn btn-blue" type="button" value="搞笑" onclick="add()">
+									<input class="btn btn-blue" type="button" value="异世" onclick="add()">
+									<input class="btn btn-blue" type="button" value="法宝" onclick="add()">
+									<input class="btn btn-blue" type="button" value="穿越" onclick="add()">
+									<input class="btn btn-blue" type="button" value="无罪" onclick="add()">
+								</div>
+                                <div class="label" id="label">
+                                    <input class="btn btn-blue" type="button" value="奇幻玄幻" onclick="add()">
+                                    <input class="btn btn-red" type="button" value="武侠仙侠" onclick="add()">
+                                    <input class="btn btn-green" type="button" value="历史军事" onclick="add()">
+                                    <input class="btn btn-black" type="button" value="都市娱乐" onclick="add()">
+                                    <input class="btn btn-blue" type="button" value="科幻游戏" onclick="add()">
+                                    <input class="btn btn-red" type="button" value="悬疑灵异" onclick="add()">
+                                    <input class="btn btn-green" type="button" value="竞技同人" onclick="add()">
+                                    <input class="btn btn-black" type="button" value="评论文集" onclick="add()">
+                                    <input class="btn btn-blue" type="button" value="二次元" onclick="add()">
+                                </div>
+                                <div style="float: left; width: 500px;">
+                                    <div class="label-submit" id="label-submit">
+
+                                    </div>
+									{% csrf_token %}
+                                    <input type="submit" id="btn_go" class="button1 button-green button-small btn-commit" value="GO">
+                                </div>
+
+
+                            </div>
+                        	<!-- end countdown container -->
+                    	</div>
+                	</div>
+        <!-- end content -->
+        </section>
+            <!-- end home section -->
+            <!-- about section -->
+            <section class="about-section">
+        	    	<!-- section background -->
+        	    	<div class="bg-container-static"></div>
+                	<!-- end section background -->
+                	<!-- content -->
+                	<div class="content col-md-8 col-md-offset-2 col-sm-12 col-sm-rlt col-xs-12 no-pad centering-y">
+                    	<div class="col-md-12 col-sm-12">
+                         <h1>关于本网站</h1>
+                	    	<!-- company description -->
+                        	<div class="desc">
+                    	    	<!-- quote -->
+                            	<p class="quote separator-line">
+                        	    	大数据 & 智能算法 & 爬虫 & ...
+                            	</p>
+                            	<!-- end quote -->
+
+<!--                            	<p class="mrg-top-sm">-->
+<!--                        	    	本网站为用户推荐最适合他们的小说。<br>-->
+<!--&lt;!&ndash;                                    部分数据展示：(点击有惊喜)&ndash;&gt;-->
+<!--                            	</p>-->
+
+
+								<div id="myCarousel" class="carousel slide" style="background-color: #ffffffdb; overflow: hidden; width: 800px; height: 400px; float: left; border-radius: 5px; margin-top: 10px">
+									<!-- 轮播（Carousel）指标 -->
+									<ol class="carousel-indicators" style="display: none">
+										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#myCarousel" data-slide-to="1"></li>
+										<li data-target="#myCarousel" data-slide-to="2"></li>
+									</ol>
+									<!-- 轮播（Carousel）项目 -->
+									<div class="carousel-inner">
+										<div class="item active" style="text-align: center">
+											<div id="chart_show" style="width: 700px; height: 420px; color: white; margin: 20px auto"></div>
+										</div>
+										<div class="item">
+											<div id="chart_show1" style="width: 700px; height: 350px; color: white; margin: 20px auto"></div>
+										</div>
+										<div class="item">
+											<div id="chart_show2" style="width: 700px; height: 350px; color: white; margin: 20px auto"></div>
+										</div>
+									</div>
+									<!-- 轮播（Carousel）导航 -->
+									<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+
+
+								</div>
+								<div id="img_show" style="float: left; display: none">
+									<img id="img1" src="/static/imgs/pic1.png" style="height: 360px">
+									<img id="img2" src="/static/imgs/pic2.png" style="height: 360px; display: none">
+									<img id="img3" src="/static/imgs/pic3.png" style="height: 360px; display: none">
+								</div>
+<!--                            	<p class="mrg-top-sm">-->
+<!--                        	    	以下内容有待改进...-->
+<!--                            	</p>-->
+                        	</div>
+                        	<!-- end company description -->
+                    	</div>
+                	<!-- end content -->
+            	</section>
+            <!-- end about section -->
+            <!-- service section -->
+            <section class="works-section">
+        	    	<!-- section background -->
+        	    	<div class="bg-container-static"></div>
+                	<!-- end section background -->
+                	<!-- content -->
+            	    	<div style="padding-top: 50px;" class="content col-md-8 col-md-offset-2 col-sm-12 col-sm-rlt col-xs-12 no-pad centering-y">
+							<!-- Modal -->
+							<div class="scroll-list modal fade bs-example-modal-lg" id="commentModal" style="z-index: 2; overflow-y: hidden" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog modal-lg" style="width: 100%;" role="document">
+									<div class="modal-content" style="background-color: rgba(0,0,0,.9); ">
+										<div class="modal-header">
+											<h4 class="modal-title" id="commentModalLabel">Modal title</h4>
+										</div>
+										<div id="commentModalBody" class="modal-body scroll-list" style="height: 380px; overflow: scroll; overflow-x: hidden">
+
+										</div>
+										<div class="modal-footer">
+											<input id="commentInput" type="text" style="border: 1px solid white;height: 48px; width: 350px; float: left; color: white;" value="在这里输入哦~">
+											{% csrf_token %}
+											<button style="margin-top: 3px; margin-left: 5px;" id="commentCommit" type="button" class="btn btn-primary">提交</button>
+											<button style="margin-top: 3px; float: right" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="scroll-list modal fade bs-example-modal-lg" id="bookModal" style="z-index: 1; overflow-y: hidden"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog modal-lg " style="width: 100%" role="document">
+									<div class="modal-content" style="background-color: rgba(0,0,0,.7);">
+										<div class="modal-header">
+											<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+										</div>
+										<div id="bookModalBody" class="modal-body" style="height: 380px">
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" style="float: right" class="btn btn-default" data-dismiss="modal">关闭</button>
+											<a id="book-src" target="_blank"><button type="button" class="btn btn-primary">在线阅读</button></a>
+											<button id="book-comment" type="button" class="btn btn-primary">评论</button>
+										</div>
+									</div>
+								</div>
+							</div>
+                	    	<div id="service" class="carousel-col">
+                    	    	<!-- service 1 -->
+                    	    	<div id="service0" class="service col-md-4">
+                    		    	<!-- icon container -->
+                        	    	<div class="icon-container">
+                        		    	<i class="fa fa-css3"></i>
+                        	    	</div>
+                        	    	<!-- end icon container -->
+
+                        	    	<!-- text container -->
+                        	    	<div class="text-container">
+                        		    	<h6>WEB DESIGN</h6>
+                        	        	<p class="mrg-top-xs">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum nteposuerit.</p>
+                        	    	</div>
+                        	    	<!-- end text container -->
+                    	    	</div>
+                    	    	<!-- end service 1 -->
+
+                            	<!-- service 2 -->
+                    	    	<div id="service1" class="service col-md-4">
+                    		    	<!-- icon container -->
+                        	    	<div class="icon-container">
+                        		    	<i class="fa fa-pencil"></i>
+                        	    	</div>
+                        	    	<!-- end icon container -->
+
+                        	    	<!-- text container -->
+                        	    	<div class="text-container">
+                        		    	<h6>GRAPHIC DESIGN</h6>
+                        	        	<p class="mrg-top-xs">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo .</p>
+                        	    	</div>
+                        	    	<!-- end text container -->
+                    	    	</div>
+                    	    	<!-- end service 2 -->
+
+                            	<!-- service 3 -->
+                    	    	<div id="service2" class="service col-md-4">
+                    		    	<!-- icon container -->
+                        	    	<div class="icon-container">
+                        		    	<i class="fa fa-gear"></i>
+                        	    	</div>
+                        	    	<!-- end icon container -->
+                        	    	<!-- text container -->
+                        	    	<div class="text-container">
+                        		    	<h6>DEVELOPMENT</h6>
+                        	        	<p class="mrg-top-xs">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent.</p>
+                        	    	</div>
+                        	    	<!-- end text container -->
+                    	    	</div>
+                    	    	<!-- end service 3 -->
+                        	</div>
+                    	</div>
+
+                	<!-- end content -->
+            	</section>
+            <!-- end works section -->
+            <!-- contact section -->
+            <section class="contact-section">
+        	    	<!-- section background -->
+        	    	<div class="bg-container-static"></div>
+                	<!-- end section background -->
+                	<!-- content -->
+                	<div class="content col-md-10 col-md-offset-1 col-sm-12 col-xs-12 no-pad centering-y col-sm-rlt">
+            	    	<!-- details -->
+                    	<div class="col-md-4 col-sm-12">
+                	    	<!-- office -->
+                        	<div class="details">
+                    	    	<h5>地点</h5>
+                            	<p>西安交通大学<br />计算机系</p>
+                        	</div>
+                        	<!-- end office -->
+
+                        	<!-- phone -->
+                        	<div class="details">
+                    	    	<h5>联系电话</h5>
+                            	<p>+123 4567 890<br />+123 4567 891</p>
+                        	</div>
+                        	<!-- end phone -->
+
+                        	<!-- email -->
+                        	<div class="details">
+                    	    	<h5>邮箱地址</h5>
+                            	<p>12345678@qq.com<br />666666@qq.com</p>
+                        	</div>
+                        	<!-- end email -->
+
+                        	<!-- social media -->
+                        	<div class="details">
+                    	    	<h5>更多方式</h5>
+
+                            	<!-- social media container -->
+                            	<div class="social-media-container">
+            				    	<a class="social-media" href="#"><i class="fa fa-facebook"></i></a>
+                        	    	<a class="social-media" href="#"><i class="fa fa-twitter"></i></a>
+                        	    	<a class="social-media" href="#"><i class="fa fa-behance"></i></a>
+                            	</div>
+                            	<!-- end social media container -->
+                        	</div>
+                        	<!-- end social media -->
+                    	</div>
+                    	<!-- end details -->
+
+                    	<!-- contact form container -->
+                    	<div class="contact-form-container col-md-8 col-sm-12 col-xs-12">
+                	    	<h5>留言</h5>
+					    	<form class="contact-form" action="contact.php" method="post" enctype="multipart/form-data">
+						    	<!-- left side -->
+						    	<div class="col-md-6 col-sm-12 no-pad">
+							    	<div class="input-container">
+								    	<input type="text" id="name" name="name" />
+								    	<label for="name">姓名</label>
+
+								    	<div class="input-border-bottom"></div>
+							    	</div>
+						    	</div>
+						    	<!-- end left side -->
+
+						    	<!-- right side -->
+						    	<div class="col-md-6 col-sm-12 no-pad">
+							    	<div class="input-container">
+								    	<input type="email" id="email" name="email" />
+								    	<label for="email">邮箱</label>
+
+								    	<div class="input-border-bottom"></div>
+							    	</div>
+						    	</div>
+						    	<!-- end right side -->
+
+						    	<!-- full width -->
+						    	<div class="col-xs-12 text-center no-pad">
+							    	<div class="input-container no-mrg">
+								    	<textarea id="message" name="message"></textarea>
+								    	<label for="message">你的留言</label>
+
+								    	<div class="input-border-bottom"></div>
+							    	</div>
+
+							    	<!-- notification container -->
+							    	<div class="col-xs-12 notif-container no-pad">
+								    	<div class="form-notif"></div>
+							    	</div>
+							    	<!-- end notification container -->
+
+							    	<!-- button container -->
+							    	<div class="col-xs-12 no-pad text-left mrg-top-xs">
+								    	<button type="submit" class="button1 button-green button-small">发送</button>
+							    	</div>
+							    	<!-- end button container -->
+						    	</div>
+						    	<!-- end full width -->
+					    	</form>
+                    	</div>
+                    	<!-- end contact form container -->
+                	</div>
+                	<!-- end content -->
+            	</section>
+            <!-- end contact section -->
+        </div>
+        <!-- end section container -->
+    </div>
+    <!-- end page container -->
+    <!-- javascript import -->
+    <!-- jquery -->
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/js/echarts.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <!-- other plugins -->
+    <script type="text/javascript" src="/static/js/plugins.min.js"></script>
+    <!-- google map -->
+    <!-- main js -->
+    <script type="text/javascript" src="/static/js/main_slideshow.js"></script>
+</body>
+</html>
